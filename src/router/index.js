@@ -3,6 +3,7 @@ import { getStoredUser, isAdminUser, isAuthenticated } from '../utils/auth';
 
 // 1. Import your pages
 import TestPage from '../views/TestPage.vue';
+import DebugPage from '../views/DebugPage.vue';
 import LoginPage from '../views/LoginPage.vue';
 import DashboardPage from '../views/DashboardPage.vue';
 import StudentsPage from '../views/StudentsPage.vue';
@@ -20,6 +21,7 @@ import UsersPage from '../views/UsersPage.vue';
 // 2. Define the routes array
 const routes = [
     { path: '/test-connection', name: 'test', component: TestPage },
+    { path: '/debug', name: 'debug', component: DebugPage },
     { path: '/', name: 'Login', component: LoginPage },
     { path: '/dashboard', name: 'Dashboard', component: DashboardPage, meta: { requiresAuth: true } },
     { path: '/students', name: 'Students', component: StudentsPage, meta: { requiresAuth: true } },
