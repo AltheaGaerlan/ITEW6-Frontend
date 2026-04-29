@@ -70,6 +70,22 @@ This project is configured for automatic deployment on Vercel.
 - **Development**: Uses `http://127.0.0.1:8000/api/v1`
 - **Production**: Set `VITE_API_BASE_URL` in Vercel dashboard to your Laravel Cloud URL
 
+#### Setting Environment Variables in Vercel:
+
+1. Go to your Vercel project dashboard
+2. Click on "Settings" tab
+3. Click on "Environment Variables"
+4. Add a new variable:
+   - **Name**: `VITE_API_BASE_URL`
+   - **Value**: `https://your-laravel-app.laravel.cloud/api/v1`
+5. Click "Save"
+6. Redeploy your application (Vercel will automatically redeploy)
+
+#### Important Notes:
+- Environment variables must start with `VITE_` to be exposed to the frontend
+- Replace `your-laravel-app.laravel.cloud` with your actual Laravel Cloud URL
+- Check the browser console to see the current API URL being used (debug logs are included)
+
 ### Configuration Files
 
 - `vercel.json` - Vercel deployment configuration
