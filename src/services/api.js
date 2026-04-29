@@ -8,7 +8,8 @@ console.log('MODE:', import.meta.env.MODE);
 console.log('PROD:', import.meta.env.PROD);
 console.log('DEV:', import.meta.env.DEV);
 
-const apiBaseUrl = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000/api/v1';
+// Temporary hardcoded solution - remove this once Vercel environment variable is fixed
+const apiBaseUrl = 'https://itew6-backend-master-uq8nc2.free.laravel.cloud/api/v1';
 console.log('Final API Base URL:', apiBaseUrl);
 console.log('===================');
 
