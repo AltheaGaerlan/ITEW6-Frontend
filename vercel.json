@@ -28,6 +28,6 @@
     }
   ],
   "env": {
-    "VITE_API_BASE_URL": "https://your-laravel-app.laravel.cloud/api/v1"
+    "VITE_API_BASE_URL": "https://itew6-backend-master-uq8nc2.free.laravel.cloud/api/v1"
   }
 }
